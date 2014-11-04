@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>play</title>
+
+    <link href="./css/main.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div id="mediaplayer"></div>
+
+    <script type="text/javascript" src="./plugins/jwplayer/jwplayer.js"></script>
+
+    <script type="text/javascript">
+    jwplayer.key = 'N8zhkmYvvRwOhz4aTGkySoEri4x+9pQwR7GHIQ==';
+    jwplayer("mediaplayer").setup({
+      flashplayer: './plugins/jwplayer/jwplayer.flash1.swf',
+        file: 'rtmp://121.40.93.117:7935/live/test',
+        width: '750',
+        height: '500',
+        autostart: true,
+        analytics: { enabled: false}
+    });
+    </script>
+  </body>
+</html>
